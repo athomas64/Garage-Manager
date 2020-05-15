@@ -1,0 +1,26 @@
+Aidan Thomas
+823677524
+14 May 2020
+
+This program allows the user to manage a garage of vehicles. The user can add trucks and cars to their
+garage. The user can also remove unwanted vehicles from their garage by entering the top speed of the vehicle they
+want to remove. The garage then sorts the user's vehicles in order from slowest to fastest.
+
+The Sortable interface allows the Car and Truck classes to be compared to each other in order to sort them in order
+from fastest to slowest.
+
+The Vehicle abstract class implements the Sortable interface's compareWith method. The Vehicle class serves as a base
+class for the Truck class and Car class to extend from.
+
+The Car and Truck class's both extend from the Vehicle class. The Car and Truck classes are the blueprints for the
+objects that will be added to the user's garage. The Car and Truck classes both have a name and top speed variable
+but override the toString method differently.
+
+The GarageManager class saves a list of Vehicle objects that the user has in their garage. The GarageManager class
+prompts the user for input and then according adds, removes or sorts vehicles. The GarageManager class uses an
+Insertion Sort to sort the vehicles by top speed. The class uses a Binary Search to find a specific vehicle to be
+removed.
+
+The Main class is only included to hold the main(String[] args) method to start the program
+
+The UnitTests class includes another main(String[] args) method runs a series of test cases on the program.
